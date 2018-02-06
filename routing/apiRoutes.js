@@ -1,26 +1,22 @@
 
-
+var htmlRoutes = require('./htmlRoutes.js');
 var path = require('path');
 
 
-function routes(app){
+// function routes(app){
+//  app.get('/api/friends', function (req, res) {
+  
+ 
+//  });
+// };
 
-
-var survey = function(name, photo, scores){
+var survey = function(name, photo, scores, score){
 this.name = name;
 this.photo = photo;
 this.scores = scores;
+this.score = score;
 };
 
-var mySurvey = new survey('mario', 'none', [1, 5, 10, 15]); 
-var myArray = [];
-myArray.push(mySurvey);
-var myJSON = JSON.stringify(myArray);
 
-app.get('/api/friends', function (req, res) {
-  res.send(myJSON);
-});
-
-};
-
-module.exports.rt = routes;
+//module.exports.rt = routes;
+module.exports.sc = survey;
