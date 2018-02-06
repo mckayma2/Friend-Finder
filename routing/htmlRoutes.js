@@ -19,14 +19,14 @@ survey: function(app){
 
 app.post('/survey', function (req, res) {
 //console.log(req.body);
-res.sendFile(path.join(__dirname + './../html/survey.html'));
+//res.sendFile(path.join(__dirname + './../html/survey.html'));
 
 
 var mySurvey = new apiRoutes.sc(req.body.name, req.body.PhotoURL, [req.body.Scores1, req.body.Scores2, req.body.Scores3, req.body.Scores4, req.body.Scores5 ], 5); 
 myArray.push(mySurvey);
-var myJSON = JSON.stringify(myArray);
-console.log(myJSON);
-routes.api(app, myJSON);
+// var myJSON = JSON.stringify(myArray);
+// console.log(myJSON);
+ routes.api(app, myArray);
 //console.log(myArray);
 });
 
