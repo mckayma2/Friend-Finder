@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/script" type="text/javascript"></script>
+</head>
+ <body>
+  
+  <form action="survey" method="post">
+  <p>Name:</p>
+  <input type="text" name="name" class="name">
+  <br>
+  <br>
+   <p>Photo URL:</p>
+   <input type="text" name="PhotoURL" id="photo">
+  <br>
+  <br>
+   <p>How was your Experience overall (1-5):</p>
+   <input type="text" name="Scores1" id='s1'>
+ <br>
+  <br>
+   <p>How was the service(1-5):</p>
+   <input type="text" name="Scores2" id='s1'>
+  <br>
+  <br>
+   <p>Would you recommend us to a friend (1-5):</p>
+   <input type="text" name="Scores3" id='s1'>
+  <br>
+  <br>
+   <p>How was the food (1-5):</p>
+   <input type="text" name="Scores4" id='s1'>
+  <br>
+  <br>
+   <p>How were the drinks (1-5):</p>
+   <input type="text" name="Scores5" id='s1'>
+  <br>
+  <br>
+   <p>How was the desert (1-5):</p>
+  <input type="submit" value="Submit" class='btn'>
+  </form>
+</body>
+</html>

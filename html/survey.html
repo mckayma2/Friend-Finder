@@ -1,46 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/script" type="text/javascript"></script>
-</head>
- <body>
-  
-  <form action="survey" method="post">
-  <p>Name:</p>
-  <input type="text" name="name" class="name">
-  <br>
-  <br>
-   <p>Photo URL:</p>
-   <input type="text" name="PhotoURL" id="photo">
-  <br>
-  <br>
-   <p>How was your Experience overall (1-5):</p>
-   <input type="text" name="Scores1" id='s1'>
- <br>
-  <br>
-   <p>How was the service(1-5):</p>
-   <input type="text" name="Scores2" id='s1'>
-  <br>
-  <br>
-   <p>Would you recommend us to a friend (1-5):</p>
-   <input type="text" name="Scores3" id='s1'>
-  <br>
-  <br>
-   <p>How was the food (1-5):</p>
-   <input type="text" name="Scores4" id='s1'>
-  <br>
-  <br>
-   <p>How were the drinks (1-5):</p>
-   <input type="text" name="Scores5" id='s1'>
-  <br>
-  <br>
-   <p>How was the desert (1-5):</p>
-  <input type="submit" value="Submit" class='btn'>
-  </form>
-</body>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mario's Restaurant Survey</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="bs-css">
+        <link rel="stylesheet" href="/awe-css">
+		<link rel="stylesheet" href="/fe">
+        <link rel="stylesheet" href="/css">
+
+       
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script
+         src="http://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="/script" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	<div class="container">
+                	
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>Mario's Restaurant Survey.</h1>
+                        <div class="description">
+                        	<p>
+	                         	Please tell us your experience to help us improve. 
+	                         	
+                        	</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 show-forms">
+                    	<span class="show-register-form active">Please fill in all fields</span> 
+                    	
+                    </div>
+                </div>
+                
+                <div class="row register-form">
+                    <div class="col-sm-4 col-sm-offset-1">
+						<form role="form" action="survey" method="post" class="r-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="r-form-first-name">Name</label>
+	                        	<input type="text" name="name" placeholder="First name..." class="r-form-first-name form-control" id="r-form-first-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="r-form-last-name">Photo URL</label>
+	                        	<input type="text" name="PhotoURL" placeholder="PhotoURL..." class="r-form-last-name form-control" id="r-form-last-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="r-form-email">Score 1</label>
+	                        	<input type="text" name="Scores1" placeholder="How was your Experience overall (1-5):" class="r-form-email form-control" id="r-form-email">
+
+	                        </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="r-form-email">Score 2</label>
+                                <input type="text" name="Scores2" placeholder="How was the service(1-5):" class="r-form-email form-control" id="r-form-email">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="r-form-email">Score 3</label>
+                                <input type="text" name="Scores3" placeholder="Would you recommend us to a friend (1-5):" class="r-form-email form-control" id="r-form-email">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="r-form-email">Score 4</label>
+                                <input type="text" name="Scores4" placeholder="How was the food (1-5):" class="r-form-email form-control" id="r-form-email">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="r-form-email">Score 5</label>
+                                <input type="text" name="Scores5" placeholder="How were the drinks (1-5):" class="r-form-email form-control" id="r-form-email">
+                                
+                            </div>
+
+				            <button type="submit" class="btn">Submit</button>
+						</form>
+                    </div>
+                
+                
+               
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p>Thank you.</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="/jq"></script>
+        <script src="bs"></script>
+        <script src="/jq-bs"></script>
+        <script src="/scr"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
 </html>
