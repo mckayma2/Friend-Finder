@@ -6,7 +6,7 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 var htmlRoutes = require('./routing/htmlRoutes.js');
 var apiRoutes = require('./routing/apiRoutes.js');
-var port = 8080;
+//var port = 8080;
 htmlRoutes.rt.default(app);
 htmlRoutes.rt.survey(app);
 
@@ -55,9 +55,5 @@ app.get('/backg', function (req, res) {
 	
 });
 // apiRoutes.rt(app);
- 
-app.listen(port, ()=>{ 
-
-console.log('Server running on port 8080');
-});
+app.set('port', 8080);
 
