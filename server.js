@@ -6,10 +6,10 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 var htmlRoutes = require('./routing/htmlRoutes.js');
 var apiRoutes = require('./routing/apiRoutes.js');
-
+var port = 8080;
 htmlRoutes.rt.default(app);
 htmlRoutes.rt.survey(app);
-app.set('port', 8080);
+
 app.get('/script', function (req, res) {
  res.sendFile(path.join(__dirname + '/html/script.js'));
 	
