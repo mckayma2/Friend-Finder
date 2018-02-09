@@ -9,7 +9,7 @@ var apiRoutes = require('./routing/apiRoutes.js');
 
 htmlRoutes.rt.default(app);
 htmlRoutes.rt.survey(app);
-
+app.set('port', 8080);
 app.get('/script', function (req, res) {
  res.sendFile(path.join(__dirname + '/html/script.js'));
 	
@@ -56,7 +56,7 @@ app.get('/backg', function (req, res) {
 });
 // apiRoutes.rt(app);
  
-app.listen(8080, ()=>{ 
+app.listen(port, ()=>{ 
 
 console.log('Server running on port 8080');
 });
